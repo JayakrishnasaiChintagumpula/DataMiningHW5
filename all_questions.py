@@ -150,24 +150,24 @@ def question7():
 
     # type: string
     # choices: ['C1', 'C2', 'None']
-    answers['(i) Best classifier?'] = None
+    answers['(i) Best classifier?'] = 'C2'
 
     # type: explain_string
-    answers['(i) Best classifier, explain'] = None
+    answers['(i) Best classifier, explain'] = "In this case, precision and recall provide additional information since they take into account the model's capacity to identify all positive samples (recall) and strike a balance between genuine positives and the prediction's relevance (precision). Based on these measures, C2 might be regarded as a superior classifier than C1, as it has a higher recall."
 
     # type: string
     # choices: ['TPR-FPR', 'precision-recall-F1-Measure']
-    answers['(ii) appropriate metric pair'] = None
+    answers['(ii) appropriate metric pair'] = 'precision-recall-F1-Measure'
 
     # type: explain_string
-    answers['(ii) appropriate metric pair, explain'] = None
+    answers['(ii) appropriate metric pair, explain'] = "The right metrics to use are precision, recall, and F1-measure since they give a more comprehensive picture of a classifier's performance, particularly when the dataset is imbalanced and there are a lot fewer positive cases than negative ones."
 
     # type: string
     # choices: ['C1', 'C2', 'C3']
-    answers['(iii) preferred classifier?'] = None
+    answers['(iii) preferred classifier?'] = 'C2'
 
     # type: explain_string
-    answers['(iii) best classifier, explain'] = None
+    answers['(iii) best classifier, explain'] = "As seen by its greatest F1-measure among the classifiers, C2 is favoured because it preserves a balance between precision and recall. C3, which has the maximum precision, is less ideal in circumstances when identifying all positives is crucial because it does so at the expense of recall."
     return answers
 
 
