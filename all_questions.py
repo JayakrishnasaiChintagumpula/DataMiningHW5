@@ -202,18 +202,18 @@ def question9():
 
     # type: dict[string,float]
     # keys: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) metrics'] = None
+    answers['(i) metrics'] = {'precision':0.61538, 'recall':5.3333, 'F-measure': 0.5714, 'accuracy':0.88}
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) best metric?'] = None
+    answers['(i) best metric?'] = 'F-measure'
 
     # type: string
     # choices: ['recall', 'precision', 'F-measure', 'accuracy']
-    answers['(i) worst metric?'] = None
+    answers['(i) worst metric?'] = 'accuracy'
 
     # type: explain_string
-    answers['(ii) Explain your choices of best and worst metrics'] = None
+    answers['(ii) Explain your choices of best and worst metrics'] = "The F-measure is the most appropriate metric in this situation because it strikes a compromise between precision and recall, which is critical in situations involving imbalanced classes, like weather prediction, where one result may be noticeably more prevalent than the other. The poorest statistic is accuracy since it can be abnormally high because of a high number of true negatives, which does not always mean that the minority class is performing well in terms of prediction."
     return answers
 
 
