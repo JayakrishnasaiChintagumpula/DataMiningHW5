@@ -231,10 +231,10 @@ def question10():
 
     # type: string
     # choices: ['F1', 'TPR/FPR']
-    answers['(c) Which evaluation measure to use between the two tests?'] = 'F1'
+    answers['(c) Which evaluation measure to use between the two tests?'] = 'TPR/FPR'
 
     # type: explain_string
-    answers['(c) Which evaluation measure? Explain'] = "Because it combines memory and precision to create a more balanced picture of test accuracy, the F1-Score is a good choice for assessing clinical tests where false positives and false negatives can have serious repercussions."
+    answers['(c) Which evaluation measure? Explain'] = "TPR/FPR is the most appropriate metric for assessing cancer detection tests T1 and T2, highlighting the significance of the test's capacity to accurately identify true positives when the substantial cost of failing to detect a diagnosis (false negative) exceeds the hazards of false positives in a medical perspective."
 
     # type: explain_string
     answers['(d) Example scenario where you would reverse choise in (c)'] = "In scenarios where the disease is rare and the cost of false positives is high, you might prioritize the TPR/FPR ratio. For example, in large-scale screenings for a rare condition, a high number of false positives could overwhelm the healthcare system with unnecessary follow-up procedures. In this case, a higher TPR/FPR ratio indicates a more efficient test, reducing the burden of false positives while still identifying those truly affected."
