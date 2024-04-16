@@ -176,23 +176,23 @@ def question8():
     answers = {}
 
     # type: eval_float
-    answers['(a) precision for C0'] = None
+    answers['(a) precision for C0'] = 'p'
 
     # type: eval_float
-    answers['(a) recall for C0'] = None
+    answers['(a) recall for C0'] = 'p'
 
     # type: eval_float
-    answers['(b) F-measure of C0'] = None
+    answers['(b) F-measure of C0'] = '2*(0.1*p)/(0.1+p)'
 
     # type: string
     # choices: ['yes', 'no', 'unknown']
-    answers['C1 better than random?'] = None
+    answers['C1 better than random?'] = 'yes'
 
     # type: float
     # What is the range of p for which C1 is better than random?  What is
     # "?" in the expression "p > ?"
 
-    answers['p-range'] = None
+    answers['p-range'] = 0.3
     return answers
 
 
