@@ -223,21 +223,21 @@ def question10():
 
     # type: string
     # choices: ['T1', 'T2']
-    answers['(a) better test based on F-measure?'] = None
+    answers['(a) better test based on F-measure?'] = 'T1'
 
     # type: string
     # choices: ['T1', 'T2']
-    answers['(b) better test based on TPR/FPR?'] = None
+    answers['(b) better test based on TPR/FPR?'] = 'T2'
 
     # type: string
     # choices: ['F1', 'TPR/FPR']
-    answers['(c) Which evaluation measure to use between the two tests?'] = None
+    answers['(c) Which evaluation measure to use between the two tests?'] = 'F1'
 
     # type: explain_string
-    answers['(c) Which evaluation measure? Explain'] = None
+    answers['(c) Which evaluation measure? Explain'] = "Because it combines memory and precision to create a more balanced picture of test accuracy, the F1-Score is a good choice for assessing clinical tests where false positives and false negatives can have serious repercussions."
 
     # type: explain_string
-    answers['(d) Example scenario where you would reverse choise in (c)'] = None
+    answers['(d) Example scenario where you would reverse choise in (c)'] = "In scenarios where the disease is rare and the cost of false positives is high, you might prioritize the TPR/FPR ratio. For example, in large-scale screenings for a rare condition, a high number of false positives could overwhelm the healthcare system with unnecessary follow-up procedures. In this case, a higher TPR/FPR ratio indicates a more efficient test, reducing the burden of false positives while still identifying those truly affected."
     return answers
 #-----------------------------------------------------------
 if __name__ == '__main__':
