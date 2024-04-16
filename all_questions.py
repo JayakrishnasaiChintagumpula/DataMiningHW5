@@ -67,10 +67,10 @@ def question3():
     answers = {}
 
     # type: string
-    answers['Agree?'] = None
+    answers['Agree?'] = 'no'
 
     # type: explain_string
-    answers['Explain'] = None
+    answers['Explain'] = "Because flipping a coin is completely random and has no predictive value, Alan's method is ineffective because it ignores all crucial information on changes in the stock market. Coin flipping is not a random chance; ensemble approaches rely on combining predictions from models that are individually better than chance."
     return answers
 
 
